@@ -26,13 +26,10 @@ namespace QYWXLocalDebug
         {
             get
             {
-       
                 //  构造成功标记
                 //  解决第一次设置参数不生效问题,Load事件初始化WXBizMsgCryptAPI时CorpToken, EncodingAESKey, CorpID为空
-      
                 if (_generatedata == null || _generatedata.SuccessStruct == false)
                     _generatedata = new WXBizMsgCryptAPI(CorpToken, EncodingAESKey, CorpID);
-
                 return _generatedata;
             }
         }
