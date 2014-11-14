@@ -97,7 +97,7 @@
             this.txt_FromUserName.Name = "txt_FromUserName";
             this.txt_FromUserName.Size = new System.Drawing.Size(100, 21);
             this.txt_FromUserName.TabIndex = 40;
-            this.txt_FromUserName.Text = "zgs";
+            this.txt_FromUserName.Text = "GarsonZhang";
             // 
             // txt_MsgType
             // 
@@ -122,7 +122,7 @@
             this.txt_CreateTime.Name = "txt_CreateTime";
             this.txt_CreateTime.Size = new System.Drawing.Size(100, 21);
             this.txt_CreateTime.TabIndex = 42;
-            this.txt_CreateTime.Text = "123456789";
+            this.txt_CreateTime.Text = "382237285";
             // 
             // XmlAttributeBase
             // 
