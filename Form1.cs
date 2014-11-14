@@ -20,7 +20,22 @@ namespace QYWXLocalDebug
             InitializeComponent();
         }
 
-        WXBizMsgCryptAPI GenerateData;
+        private WXBizMsgCryptAPI _generatedata;
+
+        WXBizMsgCryptAPI GenerateData
+        {
+            get
+            {
+       
+                //  构造成功标记
+                //  解决第一次设置参数不生效问题,Load事件初始化WXBizMsgCryptAPI时CorpToken, EncodingAESKey, CorpID为空
+      
+                if (_generatedata == null || _generatedata.SuccessStruct == false)
+                    _generatedata = new WXBizMsgCryptAPI(CorpToken, EncodingAESKey, CorpID);
+
+                return _generatedata;
+            }
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
             //模拟微信回调验证
@@ -40,7 +55,7 @@ namespace QYWXLocalDebug
             xmlAttributeEventKey1.XMLTextBox = txt_XMLText;
            
 
-            GenerateData = new WXBizMsgCryptAPI(CorpToken, EncodingAESKey, CorpID);
+            
         }
 
       

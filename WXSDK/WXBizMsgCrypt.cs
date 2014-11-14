@@ -27,6 +27,12 @@ namespace QYWXLocalDebug
     }
     public class WXBizMsgCrypt
     {
+        /// <summary>
+        ///  构造成功标记
+        ///  解决第一次设置参数不生效问题,Load事件初始化WXBizMsgCryptAPI时CorpToken, EncodingAESKey, CorpID为空
+        /// </summary>
+        public bool SuccessStruct = false;
+
         protected string m_sToken;
         protected string m_sEncodingAESKey;
         protected string m_sCorpID;
@@ -51,6 +57,10 @@ namespace QYWXLocalDebug
 	    // @param sCorpID: 企业号的CorpID
         public WXBizMsgCrypt(string sToken, string sEncodingAESKey, string sCorpID)
         {
+
+            // 构造成功标记
+            // 解决第一次设置参数不生效问题,Load事件初始化WXBizMsgCryptAPI时CorpToken, EncodingAESKey, CorpID为空
+            SuccessStruct = !String.IsNullOrEmpty(sToken) && !String.IsNullOrEmpty(sEncodingAESKey) && !String.IsNullOrEmpty(sCorpID);
             m_sToken = sToken;
             m_sCorpID = sCorpID;
             m_sEncodingAESKey = sEncodingAESKey;
