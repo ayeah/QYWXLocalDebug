@@ -56,10 +56,6 @@
     </Compile>
     <Compile Include="CommonTools.cs" />
     <Compile Include="ConvertEx.cs" />
-    <Compile Include="XmlAttributeSubscribe.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="XmlAttributeSubscribe.designer.cs" />
     <Compile Include="XmlAttributeText.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -104,7 +100,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="XmlAttributeSubscribe.resx" />
     <EmbeddedResource Include="XmlAttributeText.resx">
       <DependentUpon>XmlAttributeText.cs</DependentUpon>
     </EmbeddedResource>
