@@ -13,6 +13,7 @@ namespace QYWXLocalDebug
         [STAThread]
         static void Main()
         {
+            //这里要发生同步冲突
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
