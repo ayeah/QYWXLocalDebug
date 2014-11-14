@@ -74,6 +74,7 @@
             this.txt_EncodingAESKey = new System.Windows.Forms.TextBox();
             this.txt_CorpID = new System.Windows.Forms.TextBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.label11 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -98,7 +99,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1198, 611);
+            this.tabControl1.Size = new System.Drawing.Size(1248, 611);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage2
@@ -116,7 +117,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1190, 585);
+            this.tabPage2.Size = new System.Drawing.Size(1240, 585);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "回调认证";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -219,13 +220,14 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1190, 585);
+            this.tabPage1.Size = new System.Drawing.Size(1240, 585);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "被动响应消息";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.txt_TextResult);
             this.panel3.Controls.Add(this.btn_SendText);
             this.panel3.Controls.Add(this.label22);
@@ -236,7 +238,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(3, 211);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1184, 371);
+            this.panel3.Size = new System.Drawing.Size(1234, 371);
             this.panel3.TabIndex = 9;
             // 
             // txt_TextResult
@@ -245,7 +247,7 @@
             this.txt_TextResult.Multiline = true;
             this.txt_TextResult.Name = "txt_TextResult";
             this.txt_TextResult.ReadOnly = true;
-            this.txt_TextResult.Size = new System.Drawing.Size(302, 195);
+            this.txt_TextResult.Size = new System.Drawing.Size(333, 195);
             this.txt_TextResult.TabIndex = 8;
             // 
             // btn_SendText
@@ -315,7 +317,7 @@
             this.tabControl2.Multiline = true;
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1184, 192);
+            this.tabControl2.Size = new System.Drawing.Size(1234, 192);
             this.tabControl2.TabIndex = 0;
             // 
             // tabPage4
@@ -324,7 +326,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1176, 227);
+            this.tabPage4.Size = new System.Drawing.Size(1226, 166);
             this.tabPage4.TabIndex = 0;
             this.tabPage4.Text = "发送消息";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -334,7 +336,7 @@
             this.xmlAttributeText1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.xmlAttributeText1.Location = new System.Drawing.Point(3, 3);
             this.xmlAttributeText1.Name = "xmlAttributeText1";
-            this.xmlAttributeText1.Size = new System.Drawing.Size(1170, 221);
+            this.xmlAttributeText1.Size = new System.Drawing.Size(1220, 160);
             this.xmlAttributeText1.TabIndex = 0;
             this.xmlAttributeText1.XMLTextBox = null;
             // 
@@ -344,7 +346,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1176, 166);
+            this.tabPage5.Size = new System.Drawing.Size(1226, 166);
             this.tabPage5.TabIndex = 1;
             this.tabPage5.Text = "模拟点击菜单发送Key";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -354,7 +356,7 @@
             this.xmlAttributeEventKey1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.xmlAttributeEventKey1.Location = new System.Drawing.Point(3, 3);
             this.xmlAttributeEventKey1.Name = "xmlAttributeEventKey1";
-            this.xmlAttributeEventKey1.Size = new System.Drawing.Size(1170, 160);
+            this.xmlAttributeEventKey1.Size = new System.Drawing.Size(1220, 160);
             this.xmlAttributeEventKey1.TabIndex = 0;
             this.xmlAttributeEventKey1.XMLTextBox = null;
             // 
@@ -363,7 +365,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1184, 16);
+            this.panel2.Size = new System.Drawing.Size(1234, 16);
             this.panel2.TabIndex = 1;
             this.panel2.Visible = false;
             // 
@@ -372,7 +374,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1190, 585);
+            this.tabPage3.Size = new System.Drawing.Size(1240, 585);
             this.tabPage3.TabIndex = 3;
             this.tabPage3.Text = "主动发送消息";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -541,15 +543,25 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tabControl1);
             this.splitContainer1.Panel2MinSize = 350;
-            this.splitContainer1.Size = new System.Drawing.Size(1198, 761);
+            this.splitContainer1.Size = new System.Drawing.Size(1248, 761);
             this.splitContainer1.SplitterDistance = 146;
             this.splitContainer1.TabIndex = 11;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(874, 240);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(335, 48);
+            this.label11.TabIndex = 9;
+            this.label11.Text = "如果第一行出现：\r\n<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\r\n需要修改程序去掉这一行，因为" +
+    "如果第一行是这一句的话，\r\n微信服务器会处理错误";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1198, 761);
+            this.ClientSize = new System.Drawing.Size(1248, 761);
             this.Controls.Add(this.splitContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
@@ -623,6 +635,7 @@
         private System.Windows.Forms.Label label22;
         private XmlAttributeText xmlAttributeText1;
         private XmlAttributeEventKey xmlAttributeEventKey1;
+        private System.Windows.Forms.Label label11;
 
     }
 }
